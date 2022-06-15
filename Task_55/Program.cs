@@ -37,6 +37,7 @@ void LineChangeArray(int[,] array) // метод переводит строки
 {
     if (array.GetLength(0) != array.GetLength(1))
     {
+        Console.WriteLine();
         Console.WriteLine("Выполнение невозможно");
     }
     else
@@ -52,9 +53,8 @@ void LineChangeArray(int[,] array) // метод переводит строки
             }
 
         }
+
+        Console.WriteLine();
+        PrintArray(array);
     }
 }
-
-Console.WriteLine();
-
-PrintArray(arrRes);
