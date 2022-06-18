@@ -1,11 +1,12 @@
 ﻿//программа, которая создает трехмерный массив
 
-int[,,] arrRes = GetArray(5, 5, 5);
+int[,,] arrRes = GetArray(3, 3, 3);
 
 int[,,] GetArray(int a, int b, int c) //метод создания трехмерного массива 
 {
     int[,,] array = new int[a, b, c];
     //Random rnd = new Random();
+    int n = 10;
     for (int m = 0; m < array.GetLength(0); m++)
     {
         for (int i = 0; i < array.GetLength(1); i++)
@@ -13,7 +14,8 @@ int[,,] GetArray(int a, int b, int c) //метод создания трехме
             for (int j = 0; j < array.GetLength(2); j++)
             {
                 //array[m, i, j] = rnd.Next(1, 10);
-                array[m, i, j] = i + 10;
+                n++;
+                array[m, i, j] = n;
             }
         }
     }
