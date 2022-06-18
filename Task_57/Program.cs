@@ -39,7 +39,6 @@ void LineChangeArray(int[,] array)
     {
         for (int n = 0; n < array.GetLength(1); n++)
         {
-            if (array[m, n] == array[m, n]
             for (int i = 0; i < array.GetLength(0); i++)
             {
                 for (int j = 0; j < array.GetLength(1); j++)
