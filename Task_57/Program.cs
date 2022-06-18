@@ -32,7 +32,7 @@ void PrintArray(int[,] array) // метод вывода массива в те�
 
 LineChangeArray(arrRes);
 
-void LineChangeArray(int[,] array) // метод переводит строки в столбцы, а столбцы в строки
+void LineChangeArray(int[,] array)
 {
     int count = 0;
     for (int m = 0; m < array.GetLength(0); m++)
@@ -49,7 +49,7 @@ void LineChangeArray(int[,] array) // метод переводит строки
 
             }
 
-            Console.WriteLine($"{array[m,n]} встречается {count} раз");
+            Console.WriteLine($"| {array[m,n]} встречается {count} раз |");
             count = 0;
         }
 
